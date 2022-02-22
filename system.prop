@@ -32,5 +32,4 @@ persist.service.pcsync.enable=0
 
 # SleepMode
 PRODUCT_PROPERTY_OVERRIDES += \
-    pm.sleep_mode=3 \
-    ro.ril.disable.power.collapse=0
+    pm.sleep_mode=1
