@@ -165,9 +165,15 @@ persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.mt_sms_ack=30
 persist.vendor.radio.rat_on=combine
+persist.vendor.radio.data_ltd_sys_ind=1
+persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.sib16_support=1
 ro.telephony.default_network=22,22
 ro.vendor.use_data_netmgrd=true
+persist.dbg.ims_volte_enable=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
 
 # Sensor
 ro.vendor.sdk.sensors.gestures=false
