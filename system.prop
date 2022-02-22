@@ -33,3 +33,8 @@ persist.service.pcsync.enable=0
 # SleepMode
 PRODUCT_PROPERTY_OVERRIDES += \
     pm.sleep_mode=1
+
+# Blurs
+ro.surface_flinger.supports_background_blur=1
+ro.sf.blurs_are_expensive=1
+persist.sys.sf.disable_blurs=1
