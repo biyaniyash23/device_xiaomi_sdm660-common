@@ -142,6 +142,7 @@ ro.vendor.qti.va_aosp.support=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1 
 persist.dbg.wfc_avail_ovr=1
+persist.dbg.ims_volte_enable=1
 
 # Media
 debug.stagefright.omx_default_rank.sw-audio=1
