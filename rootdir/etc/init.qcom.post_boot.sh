@@ -1498,7 +1498,8 @@ case "$target" in
                 echo 1 > /sys/module/lpm_levels/lpm_workarounds/dynamic_clock_gating
                 # Enable timer migration to little cluster
                 echo 1 > /proc/sys/kernel/power_aware_timer_migration
-
+                # Remove settings cache, avoids derps after dirty flash
+                rm -rf /data/system/package_cache
                 # Set Memory parameters
                 configure_memory_parameters
 
