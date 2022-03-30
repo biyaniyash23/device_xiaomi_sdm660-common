@@ -213,3 +213,6 @@ ro.vendor.qti.sys.fw.bservice_enable=true
 ro.sys.fw.bservice_limit=6
 ro.sys.fw.bservice_age=10000
 ro.am.reschedule_service=true
+
+# Codec2 switch
+debug.media.codec2=2
