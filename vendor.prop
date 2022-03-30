@@ -216,3 +216,10 @@ ro.am.reschedule_service=true
 
 # Codec2 switch
 debug.media.codec2=2
+
+
+# Additional props
+ro.vendor.qti.cgroup_follow.enable=true
+persist.vendor.qti.inputopts.enable=true
+persist.vendor.qti.inputopts.movetouchslop=0.6
+ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
