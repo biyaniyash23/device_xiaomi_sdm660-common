@@ -3,3 +3,6 @@ allow platform_app sysfs_graphics:dir search;
 allow platform_app sysfs_graphics:file r_file_perms;
 allow platform_app sysfs_fps:dir search;
 allow platform_app sysfs_fps:file r_file_perms;
+#Fps
+allow platform_app nfc_service:service_manager { find };
+allow platform_app sysfs_graphics:dir search;
