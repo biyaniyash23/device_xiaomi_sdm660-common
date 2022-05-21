@@ -1,1 +1,23 @@
 allow cameraserver property_socket:sock_file { write };
+
+in priv_app.te
+allow priv_app zygote:unix_stream_socket { getopt };
+
+in system_server.te
+allow system_server unlabeled:file { write };
+
+in untrusted_app.te
+allow untrusted_app app_data_file:file
+ { execute };
+
+in untrusted_app.te
+allow untrusted_app proc_zoneinfo:file { read };
+
+in untrusted_app.te
+allow untrusted_app system_lib_file:file { execmod };
+
+in untrusted_app.te
+allow untrusted_app vendor_persist_camera_prop:file { read };
+
+in untrusted_app.te
+allow untrusted_app zygote:unix_stream_socket { getopt };
