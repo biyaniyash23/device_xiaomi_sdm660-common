@@ -30,6 +30,11 @@
 # Light HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.lights-service\.xiaomi_sdm660                     u:object_r:hal_light_default_exec:s0
 
+# Live Display
+/vendor/bin/hw/android\.hardware\.lights-service\.whyred                u:object_r:hal_light_default_exec:s0
+/vendor/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.whyred        u:object_r:hal_lineage_livedisplay_qti_exec:s0
+/sys/class/drm/card0/card0-DSI-1/disp_param                             u:object_r:vendor_sysfs_graphics:s0
+
 # Mlipay
 /(vendor|system/vendor)/bin/mlipayd@1.1         u:object_r:hal_mlipay_default_exec:s0
 
