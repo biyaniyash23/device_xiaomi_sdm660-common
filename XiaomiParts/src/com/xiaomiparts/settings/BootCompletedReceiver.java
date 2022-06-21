@@ -27,6 +27,7 @@ import androidx.preference.PreferenceManager;
 
 import com.xiaomiparts.settings.doze.DozeUtils;
 import com.xiaomiparts.settings.kcal.Utils;
+import com.xiaomiparts.settings.vibration.VibratorStrengthPreference;
 
 public class BootCompletedReceiver extends BroadcastReceiver implements Utils {
 

@@ -33,6 +33,7 @@ import androidx.preference.TwoStatePreference;
 import com.xiaomiparts.settings.doze.DozeSettingsActivity;
 import com.xiaomiparts.settings.kcal.KCalSettingsActivity;
 import com.xiaomiparts.settings.speaker.ClearSpeakerActivity;
+import com.xiaomiparts.settings.vibration.VibratorStrengthPreference;
 import com.xiaomiparts.settings.preference.SecureSettingSwitchPreference;
 
 public class XiaomiParts extends PreferenceFragment implements
@@ -81,6 +82,9 @@ public class XiaomiParts extends PreferenceFragment implements
                 return true;
             }
         });
+
+        VibratorStrengthPreference mVibratorStrength = findPreference("vib_strength");
+        mVibratorStrength.setEnabled(VibratorStrengthPreference.isSupported());
 
         if (FileUtils.fileWritable(USB_FASTCHARGE_PATH)) {
             mUsbFastCharger = findPreference(PREF_USB_FASTCHARGE);
